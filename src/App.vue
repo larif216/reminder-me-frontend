@@ -1,6 +1,6 @@
 <template>
     <div class="container pt-4 pb-4">
-        <div class="container content pt-5 pb-5">
+        <div class="container content">
             <h1 class="pb-4 text-center">
                 Deadline Bersama
             </h1>
@@ -380,7 +380,7 @@ export default {
         background-color: white;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
-        padding: 0 50px 0 50px !important;
+        padding: 80px 50px 80px 50px !important;
     }
 
 </style>
