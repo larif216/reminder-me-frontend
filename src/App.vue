@@ -282,7 +282,7 @@ export default {
         },
         async updateData() {
             await axios.put(
-                "http://updatedeadlineLB-1219689781.us-east-1.elb.amazonaws.com/deadline/update",
+                "https://cors-anywhere.herokuapp.com/http://updatedeadlineLB-1219689781.us-east-1.elb.amazonaws.com/deadline/update",
                 {
                     id: this.updateFields.id,
                     name: this.updateFields.name,
@@ -309,7 +309,7 @@ export default {
                     due: this.getISODateFormat(this.createFields.dueDate, this.createFields.dueTime)
                 }
             await axios.post(
-                "http://reminder-me-create-deadline.us-east-1.elasticbeanstalk.com/deadline/create",
+                "https://cors-anywhere.herokuapp.com/http://reminder-me-create-deadline.us-east-1.elasticbeanstalk.com/deadline/create",
                 body
                 
             ).then(response => {
